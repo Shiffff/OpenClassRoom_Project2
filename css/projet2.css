@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');  /* Importation de la POLICE  */
+
+#fullpage /* propriété global de la page  */
+{
+    box-sizing: border-box; /* systeme de border in box  */
+    margin: auto;  /* alignement horizontal  */
+    font-family: "Raleway", "sans-serif"; /* police de la page  */
+    max-width: 1200px; /* largeur min/max de la page  */
+    min-width: 321px; 
+}
+img
+{
+    object-fit:cover /* gere la facon de gerer les images  */
+}
+
+
+
+
+/* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*//* Header*/
+
+
+
+
+#title_nav /* ID de toute la barre haute  */
+{
+    display: flex; /* systeme de box horizontal   */
+    align-items: center; /* aligne les elements aux autres  */
+    justify-content: space-between; /* dispose les elements dans le conteneur  */
+    flex-wrap: wrap; /* permet aux elements de wrap passé a la ligne  */
+}
+a:visited /* Gere la couleur des liens déja visiter - par defaut violet  */
+{
+    text-decoration: none;
+    color: #000000;
+}
+header img /* Logo en haut a gauche  */
+{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 30px 0px 20px 20px;
+}
+#navheader a /* Defini les liens en haut a droite de la page - enleve les tiret existant....  */
+{
+    text-decoration: none; 
+    padding: 39px 20px 0px 20px;
+    margin-right: 40px;
+    color: #0065FC;
+    flex-wrap: wrap;
+}
+#navheader a:hover /* gestion de la bordure haute du menu  */
+ {
+    border-top: 3px solid #0065FC;
+ }
+ h1 /* Titre H1 Trouvez votre....  */
+ {
+     font-size: 1.3em;
+ }
+ h2 /* Titre H2 En plein centre ville....  */
+ {
+     font-size: 1em;
+     font-weight: 400; /* type Gras  */
+ }
+ #form /* Barre recherche   */
+ {
+    display: flex;
+    align-items: center;
+ }
+ #form i /* Icone maps gauche couleurs + taille  */
+ {
+     padding: 16px;
+     background-color: #ebeff3;
+     border-radius: 15px 0 0 15px;
+ }
+#form input /* Barre de recherche + bouton  */
+{
+    padding: 14px;
+    padding-right: 15px;
+    border: 1px solid #ebeff3;
+}
+.submit /* bouton design  */
+{
+    background: #0065FC;
+    color: #fff;
+    border-radius: 0px 15px 15px 0px;
+    font-weight:600;
+    cursor: pointer;
+    transition: transform 200ms; /* mouvement bouton au survol  */
+}
+#form input::placeholder /* Ecriture proposer "Marseille France"  */
+{
+font-weight: bold; 
+color: rgb(156, 152, 152);
+}
+.submit:hover
+{
+    background-color: #1f1cb3; /* Couleur qui change au survol + grossissement  */
+    transform: scale(1.02);
+}
+.bouton1
+{
+    display: none; /* Suppression du second bouton présent sur la version mobile/tablette  */
+}
+
+
+/* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres *//* Filtres */
+
+
+
+#filters /* Filtres Flex = horizontal + alignement les uns aux autres */
+{
+    display: flex; 
+    align-items: center;
+}
+ul /* systeme de liste a puce / retrait des puce   */
+{
+    display: flex; 
+    list-style-type: none;
+    margin-left: 5px;
+}
+li
+{
+    margin-right: 25px;
+    border: 2px solid #ebeff3;
+    border-radius: 45px 45px 45px 45px;
+}
+ul a /* Design text puce  */
+{
+    text-decoration: none;
+    padding: 15px 15px 15px 15px;
+    font-weight: bold;
+}
+#filters_menu i  /* design icone puce  */
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 12px;
+    border-radius: 45px 45px 45px 45px;
+}
+
+#filters p /* Design text a puce  */
+{
+    font-weight: bold;
+}
+li:hover  /* Mouvement survol icones  */
+{
+    background-color: #f1f5fa;
+    transform: scale(1.02);
+}
+
+/* Logoinfo + p *//* Logoinfo + p *//* Logoinfo + p *//* Logoinfo + p *//* Logoinfo + p *//* Logoinfo + p *//* Logoinfo + p *//* Logoinfo + p *//* Logoinfo + p *//* Logoinfo + p *//* Logoinfo + p */
+
+
+.fa-info  /* Design icone I  */
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#0065FC;
+    border: 1px solid #dde3eb;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+}
+.index  /* Positionnement Icone I  */
+{
+    display: flex;
+    align-items: center; 
+    padding-bottom: 25px;
+}
+
+
+/* Fin du Header --- Debut Section  *//* Fin du Header --- Debut Section  *//* Fin du Header --- Debut Section  *//* Fin du Header --- Debut Section  *//* Fin du Header --- Debut Section  */
+
+
+
+section /* Passage de Article + aside cote a cote  */
+{
+    display: flex;
+    justify-content: space-between;
+}
+section h2 /* Titre H2 hebergement a marseille.....  */
+{
+    padding: 20px 0 10px 50px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.full /* Gestion Couleurs Stars  */
+{
+    color: #0065FC;
+
+}
+.white /* Gestion Couleurs Stars  */
+{
+    color: #DEEBFF;
+}
+.fa-star /* Gestion position Stars  */
+{
+    width: 9px;
+}
+strong /* Gras PRIX gestion de la marge  */
+{
+    margin-right: 25px;
+}
+
+
+/* Debut Article  *//* Debut Article  *//* Debut Article  *//* Debut Article  *//* Debut Article  *//* Debut Article  *//* Debut Article  *//* Debut Article  *//* Debut Article  *//* Debut Article  */
+
+
+article img /* Gestion globalité Img Article  */
+{
+    height: 105px;
+    width: 205px;
+    border-radius: 15px 15px 0 0;
+}
+article /* Gestion taille Article Vs Aside  */
+{
+    background-color: #F2F2F2;
+    width: 66%;
+    border-radius: 15px;
+}
+#list_Logements /* Gestion globale des logements dans Article  */
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: 28px;
+    padding-left: 45px;
+    padding-right: 45px;
+    align-items: center;
+}
+.Logements  /* Gestion taille Article Vs Aside  */
+{
+    background-color: white;
+    border-radius: 15px;
+    padding: 3px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+.Logements:hover /* Gestion du mouvement au survol  */
+{
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: transform 200ms;
+}
+article h3 /* Titre dans les etiquette  */
+{
+    margin: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+article p /* Texte dans les etiquettes  */
+{
+    margin: 6px;
+    font-size: 13px;
+}
+article h4 /* afficher plus....  */
+{
+    font-size: 14px;
+    padding: 17px 17px 17px 37px;
+    width: 84px;
+}
+article h4:hover /* Afficher plus survol  */
+{
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: transform 200ms;
+}
+article i  /* Gestion taille Stars  */
+{
+    font-size: 10px;
+}
+
+
+
+/* Debut ASIDE  *//* Debut ASIDE  *//* Debut ASIDE  *//* Debut ASIDE  *//* Debut ASIDE  *//* Debut ASIDE  *//* Debut ASIDE  *//* Debut ASIDE  *//* Debut ASIDE  *//* Debut ASIDE  *//* Debut ASIDE  */
+
+
+
+aside /* Gestion taille Article Vs Aside  */
+{
+    background-color: #F2F2F2;
+    width: 31%;
+    border-radius: 15px;
+    display: flex; /* Contient les div dans le bloc  */
+    flex-direction: column;
+    
+}
+#list_Logements2 /* Gestion global logement ASIDE  */
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 50px    ;
+}
+.Logements2 /* Gestion des etiquette indépendament  */
+{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    margin: 3px 40px 0px 40px;
+    min-width: 260px
+}
+.Logements2:hover /* etiquettes survol  */
+{
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: transform 200ms;
+}
+aside img /* Images ASIDE  */
+{
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+aside i /* Stars taille  */
+{
+    font-size: 10px;
+}
+aside h3 /* Titre Etiquette aside  */
+{
+    margin: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: -2px;
+}
+aside p /* text Aside  */
+{
+    margin: 6px;
+    font-size: 13px;
+}
+.text_middle /* Placement des stars Via padding sous le text */
+{
+    padding-bottom: 15px;
+}
+aside h2 /* Gestion Titre Aside Les Plus populaires + placement logo droit */
+{
+    padding: 20px 0 10px 40px;
+    font-weight: 700;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between  ;
+}
+.fa-chart-line /* Logo droit ASIDE */
+{
+    padding-right: 30px;
+    font-size: large;
+}
+
+
+
+
+/* Debut DIV ACTIVITE MARSEILLE  *//* Debut DIV ACTIVITE MARSEILLE  *//* Debut DIV ACTIVITE MARSEILLE  *//* Debut DIV ACTIVITE MARSEILLE  *//* Debut DIV ACTIVITE MARSEILLE  */
+
+
+
+
+.act_marseille /* Debut GRID Activite marseille   */
+{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%; /* Gestion nombre et taille des colone  */
+    grid-row-gap: 15px;     /* Gestion taille inter ligne et intercolone  */
+    grid-column-gap: 30px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.port 
+{
+    grid-column: 1 / 2; /* Postition dans la grille  */
+    grid-row: 1 / 4;
+    background-image: url("assets/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); /* image  */
+    height: 400px;
+    background-size: cover;
+    display: flex; /* Legende photo  */
+    border-radius: 15px; /* Bordure arrondie  */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+.parc
+{
+    grid-row: 1 / 4;
+    grid-column: 3 / 4;
+    background-image: url("assets/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    background-size: cover;
+    background-position:center;
+}
+.fort
+{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-image: url("assets/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    height: 220px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    background-size: cover;
+    background-position:center;
+}
+.iles
+{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-image: url("assets/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+.longchamp
+{
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    background-image: url("assets/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    background-size: cover;
+    background-position:center;
+}
+.notredame
+{
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    background-image: url("assets/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    height: 208px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+#ancre_activites /* positionnement titre  */
+{
+    padding-top: 30px;
+}
+.act_marseille h5 /* Legende photo */
+{
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: white;
+    width: 100%;
+    padding: 15px;    
+    border-radius: 0 0 15px 15px;
+}
+.act_marseille >*:hover /* >* = selectionne toutes les 1er div de act marseille */
+{
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: transform 200ms;
+}
+
+
+/* New media ecran semi grand pour grid *//* New media ecran semi grand pour grid *//* New media ecran semi grand pour grid *//* New media ecran semi grand pour grid */
+
+
+
+
+@media screen and (min-width:992px) and (max-width:1197px)
+{
+    .act_marseille
+{
+    display: grid;
+    grid-template-columns: 23% 23% 23%;
+    grid-gap: 25px;
+    height: 200px;
+    margin-bottom: 200px;
+}
+    .port
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-image: url("assets/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    height: 200px;
+    background-position:bottom;
+    background-size: cover;
+}
+.parc
+{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-image: url("assets/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    height: 200px;
+    background-position:bottom;
+    background-size: cover;
+}
+.fort
+{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-image: url("assets/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    height: 200px;
+    background-position: center;
+}
+.iles
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: url("assets/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: bottom;
+}
+.longchamp
+{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-image: url("assets/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: bottom;
+}
+.notredame
+{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    background-image: url("assets/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+#ancre_activites
+{
+    padding-top: 30px;
+    padding-left: 36px;
+}
+}
+
+
+/* Fin de la media *//* Fin de la media *//* Fin de la media *//* Fin de la media *//* Fin de la media *//* Fin de la media *//* Fin de la media *//* Fin de la media *//* Fin de la media */
+
+
+
+/* Debut Footer *//* Debut Footer *//* Debut Footer *//* Debut Footer *//* Debut Footer *//* Debut Footer *//* Debut Footer *//* Debut Footer *//* Debut Footer *//* Debut Footer */
+
+footer
+{
+    background-color: #F2F2F2;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Raleway", "sans-serif";
+    padding: 30px;
+}
+h6
+{
+    font-weight: 800;
+    font-size: medium;
+}
+.columnfooter
+{
+    width: 24%;
+}
+.columnfooter >*:hover
+{
+    cursor: pointer;
+    width: 90%;
+} 
